@@ -27,7 +27,7 @@ void insertionSort(int A[], int size){
 
 void displayArray(int A[], int size){
     for(int i = 0; i < size; i++)
-        cout << A[i];
+        cout << A[i] << " ";
     cout << endl;
 }
 
@@ -37,7 +37,12 @@ int main() {
     int A[] = {50, 3, 20, 11, 1, 8};
     int n = sizeof(A)/sizeof(A[0]);
     
-    cout << n << endl;
+    // This should output the size of the (number of elements) in A
+    cout << "The size of A is: " << n << endl;
+    
+    // Display the array before sorting
+    cout << "Array A contains the following elements: ";
+    displayArray(A,n);
     
     return 0;
 }
