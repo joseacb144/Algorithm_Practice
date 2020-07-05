@@ -16,7 +16,7 @@ void insertionSort(int A[], int size){
         key = A[i];
         j = i-1;
         
-        while(j >= 0 && j > key){
+        while(j >= 0 && A[j] > key){
            
             A[j+1] = A[j];
             j--;
@@ -43,6 +43,11 @@ int main() {
     // Display the array before sorting
     cout << "Array A contains the following elements: ";
     displayArray(A,n);
+    
+    // Display the array after sorting
+    cout << "Array A is now sorted: ";
+    insertionSort(A, n);
+    displayArray(A, n);
     
     return 0;
 }
