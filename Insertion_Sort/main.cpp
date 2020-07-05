@@ -34,8 +34,10 @@ void displayArray(int A[], int size){
 
 int main() {
     
-    std::cout << "Hello, World!\n";
+    int A[] = {50, 3, 20, 11, 1, 8};
+    int n = sizeof(A)/sizeof(A[0]);
     
+    cout << n << endl;
     
     return 0;
 }
